@@ -94,6 +94,7 @@ DASHING = {
         'commitlist',
         'fatlist',
         'fatnumber',
+        'informednumber',
         'linklist',
         'sizednumber',
         'skinnylist',

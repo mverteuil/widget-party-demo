@@ -1,3 +1,3 @@
 Django==1.7
 django-dashing==0.2.6
-widget-party==2.1
+widget-party==2.2.3

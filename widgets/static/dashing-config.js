@@ -390,6 +390,67 @@ fatnumber.addWidget('fat_number_short', 'FatNumber', {
     interval: 5000
 });
 
+/** InformedNumber **************************************************************************************/
+
+var informednumber = harness.addDashboard('Informed Number');
+
+informednumber.addWidget('informed_number_simple', 'InformedNumber', {
+    scope: {
+        title: 'Simple',
+        value: randomInt(9),
+        extra: [
+            {label: 'Daily Average', value: 4},
+            {label: 'Weekly Average', value: 5},
+            {label: 'Quarterly Average', value: 5},
+        ],
+        updatedAt: new Date().today() + " @ " + new Date().timeNow()
+    },
+    interval: 5000
+});
+
+informednumber.addWidget('informed_number_large', 'InformedNumber', {
+    scope: {
+        title: 'Large',
+        value: 1293021,
+        extra: [
+            {label: 'max', value: 1293021},
+            {label: 'median', value: 25000},
+            {label: 'min', value: 0},
+        ],
+        updatedAt: new Date().today() + " @ " + new Date().timeNow()
+    },
+    interval: 5000
+});
+
+informednumber.addWidget('informed_number_details', 'InformedNumber', {
+    scope: {
+        title: 'Wait Factor',
+        value: randomInt(999) + 'x',
+        extra: [
+            {label: 'max', value: 1500},
+            {label: 'median', value: 1},
+            {label: 'min', value: 0},
+            {label: 'sample std', value: 85},
+            {label: 'var', value: 850},
+            {label: 'total', value: 120},
+            {label: 'resolved', value: 65},
+            {label: 'unresolved', value: 55}
+        ],
+        updatedAt: new Date().today() + " @ " + new Date().timeNow()
+    },
+    interval: 5000
+});
+
+informednumber.addWidget('informed_number_short', 'InformedNumber', {
+    row: 1,
+    scope: {
+        title: 'Short',
+        value: randomInt(999),
+        updatedAt: new Date().today() + " @ " + new Date().timeNow()
+    },
+    interval: 5000
+});
+
 /** LinkList ***************************************************************************************/
 
 var linklist = harness.addDashboard('Link List');
