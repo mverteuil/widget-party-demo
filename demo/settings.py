@@ -89,6 +89,9 @@ STATIC_URL = '/static/'
 DASHING = {
     'REPOSITORY': 'https://rawgit.com/mverteuil/django-dashing-channel/master/repositories.json',
     'INSTALLED_WIDGETS': (
+        'clock',
+        'list',
+        'number',
         'assignment',
         'buildstatus',
         'commitlist',
