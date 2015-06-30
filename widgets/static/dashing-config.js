@@ -685,7 +685,6 @@ skinnylist.addWidget('skinny_list_wide', 'SkinnyList', {
     }
 })
 
-
 skinnylist.addWidget('skinny_list_short', 'SkinnyList', {
     row: 1,
     scope: {
@@ -706,4 +705,41 @@ skinnylist.addWidget('skinny_list_short', 'SkinnyList', {
         ]
     },
     interval: 5000,
+});
+
+/** Classic Widgets ********************************************************************************/
+
+var classic = harness.addDashboard('Classic')
+
+classic.addWidget('classic_list', 'List', {
+    row: 1,
+    scope: {
+        title: 'Classic List',
+        data: [
+        {
+            "value": "Culpa laborum exercitation sunt ex sint officia ullamco velit proident.",
+            "label": "e825350"
+        },
+        {
+            "value": "Eiusmod est incididunt ullamco qui mollit dolore labore ea labore labore pariatur.",
+            "label": "4459b00"
+        }
+        ]
+    },
+    interval: 5000,
+});
+
+classic.addWidget('classic_number', 'Number', {
+    scope: {
+        title: 'Classic Number',
+        value: randomInt(9),
+        updatedAt: new Date().today() + " @ " + new Date().timeNow()
+    },
+    interval: 5000
+});
+
+classic.addWidget('classic_clock', 'Clock', {
+    scope: {
+        title: 'Classic Clock',
+    },
 });
